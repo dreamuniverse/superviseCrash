@@ -1,0 +1,3 @@
+# your main.py path here. and add cron task in your account
+
+*/10 * * * * /usr/local/bin/python3.6 main.py

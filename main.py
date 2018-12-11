@@ -44,7 +44,7 @@ try:
     version = getVersion()
 except Exception as e:
     version = "###"
-    logger.error("version get occurs error " + e.__str__())
+    logger.error("version get occurs error ", e)
 if (version == ""):
     version = "###"
 
@@ -195,7 +195,7 @@ try:
     login("yourAccount", "yourPassword")
     getCrash()
 except Exception as e:
-    logger.error("get Crash occurs error " + e.__str__())
+    logger.error("get Crash occurs error ", e)
 
 logger.info("start time is " + str(startTime) + "  end time is " + str(endTime))
 logger.info(
